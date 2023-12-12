@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- LINK TO THE STYLESHEET FILE -->
+    <link rel="stylesheet" href="m-calendar.css" />
+    <title>MCalendar</title>
+  </head>
+  <body>
+    <!-- ADD THIS THIS DIV WITH id="calendar-container" -->
+    <div id="calendar-container"></div>
+
+    <!-- LINK TO THE JS FILE -->
+    <script src="m-calendar.js"></script>
+    <!-- HOW USE THE CALENDAR -->
+    <script>
+      //
+      // on document load
+      document.addEventListener("DOMContentLoaded", function () {
+        //
+        // get the calendar container
+        const calendarContainer = document.getElementById("calendar-container");
+        //
+        // create a new MCalendar object class
+        // calendarContainer : HTML element
+        // props : object of properties
+        const mcalendar = new MCalendar(calendarContainer, {
+          events: [
+            {
+              title: "Team Meeting",
+              start_date: "2023-12-01 10:00:00",
+              end_date: "2023-12-01 11:30:00",
+              color: "white",
+              background_color: "maroon",
+            },
+            {
+              title: "Project Deadline",
+              start_date: "2023-12-05 14:00:00",
+              end_date: "2023-12-05 18:00:00",
+              color: "white",
+              background_color: "darkgreen",
+            },
+            {
+              title: "Client Presentation",
+              start_date: "2023-12-10 13:30:00",
+              end_date: "2023-12-10 15:00:00",
+              color: "black",
+              background_color: "silver",
+            },
+            {
+              title: "Training Workshop",
+              start_date: "2023-12-15 09:00:00",
+              end_date: "2023-12-15 17:00:00",
+              color: "white",
+              background_color: "blue",
+            },
+            {
+              title: "Holiday Party",
+              start_date: "2023-12-20 18:00:00",
+              end_date: "2023-12-20 22:00:00",
+              color: "black",
+              background_color: "orange",
+            },
+            {
+              title: "Conference Call",
+              start_date: "2023-12-02 15:00:00",
+              end_date: "2023-12-02 16:30:00",
+              color: "black",
+              background_color: "yellow",
+            },
+            {
+              title: "Product Launch",
+              start_date: "2023-12-07 09:30:00",
+              end_date: "2023-12-07 12:00:00",
+              color: "white",
+              background_color: "purple",
+            },
+            {
+              title: "Team Building Event",
+              start_date: "2023-12-12 13:00:00",
+              end_date: "2023-12-12 16:00:00",
+              color: "white",
+              background_color: "green",
+            },
+            {
+              title: "Interviews",
+              start_date: "2023-12-18 10:00:00",
+              end_date: "2023-12-18 15:00:00",
+              color: "black",
+              background_color: "cyan",
+            },
+            {
+              title: "Company Retreat",
+              start_date: "2023-12-25 14:00:00",
+              end_date: "2023-12-27 12:00:00",
+              color: "white",
+              background_color: "brown",
+            },
+          ],
+        });
+        // INITIALIZE THE CALENDER
+        mcalendar.render();
+      });
+    </script>
+  </body>
+</html>
