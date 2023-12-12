@@ -1,5 +1,9 @@
 # MCalendar
 
+![MCalendar](https://github.com/Munya-Marinda/m-calendar/assets/84540577/14534007-3e3a-4c43-a175-734d2318edd1)
+![mcalender](https://github.com/Munya-Marinda/m-calendar/assets/84540577/b776a2b6-ab00-4d0e-8ce3-c5e1712e0787)
+
+
 MCalendar is a lightweight JavaScript library for easily integrating a customizable calendar into your web projects. It provides an intuitive interface to display events, deadlines, meetings, or any other date-related information. MCalendar is designed with simplicity and flexibility in mind, making it easy to use and customize according to your needs.
 
 ## Getting Started
